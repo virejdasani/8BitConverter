@@ -1,0 +1,36 @@
+<html>
+<title> 8-Bit Binary Converter</title>
+<body onLoad='init()', style="background-color:#000000">
+
+<h3> 8-Bit Binary Converter </h3>
+<font size=-2>
+</font>
+
+<script src="csConverter.js"></script>
+<h1 style="color:#ffffff">A Minimal 8-bit Converter for Computer Science</h1>
+<h1 style="color:#ffffff">Made by Virej Dasani</h1>
+
+<P style="color:#ffffff">
+
+<P style="color:#ffffff">
+<blockquote>
+<form name=F0 onsubmit="">
+<P style="color:#ffffff"> <input type=text name=dec
+   size=6 onChange='parseInt(update(document.forms.F0.dec.value, 10))'> Decimal
+<P style="color:#ffffff"> <input type=text name=bin
+   size=16 onChange='update(parseInt(document.forms.F0.bin.value, 2))'> Binary
+<P style="color:#ffffff"> <input type=text name=hex
+   size=6 onChange='update(parseInt(document.forms.F0.hex.value, 16))'> Hex
+<P style="color:#ffffff"> <input type=text name=ascii
+   size=6 onChange='update(atoi(document.forms.F0.ascii.value))'> ASCII
+
+<P style="color:#ffffff">
+<input type=button value="Add 1" onClick='update(parseInt(num)+1)'> &nbsp; &nbsp; &nbsp;
+<input type=button value="Subtract 1" onClick='update(parseInt(num)-1)'> &nbsp; &nbsp; &nbsp;
+
+<input type=button value="Clear All" onClick='init()'>
+</FORM>
+
+</blockquote>
+
+<P style="color:#ffffff">
